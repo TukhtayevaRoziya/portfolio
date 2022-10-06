@@ -1,0 +1,211 @@
+body {
+  background: #fff !important;
+  color: #02021a !important;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  background: url(./assets/bg.png) left/cover !important;
+  background-repeat: repeat;
+}
+
+.dark:before {
+  background: #0ff;
+}
+
+.dark:after {
+  background: #b700ff;
+  left: 250px;
+  top: 200px;
+}
+
+body:after,
+body:before {
+  content: '';
+  -webkit-filter: blur(140px);
+  filter: blur(140px);
+  height: 200px;
+  position: fixed;
+  width: 200px;
+}
+
+.bg-circle1,
+.bg-circle2 {
+  height: 200px;
+  position: fixed;
+  width: 200px;
+}
+
+.dark .bg-circle1 {
+  background: #0ff;
+  -webkit-filter: blur(140px);
+  filter: blur(140px);
+  right: 0;
+  top: 0;
+}
+
+.dark .bg-circle2 {
+  background: #b700ff;
+  bottom: 100px;
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  right: 250px;
+  z-index: -1;
+}
+
+.dark {
+  background-color: #02021a !important;
+}
+
+.dark .Footer_Footer__tKyXQ a,
+.dark .Footer_Footer__tKyXQ a span {
+  color: #fff;
+}
+
+.Footer_Footer__tKyXQ a,
+.Footer_Footer__tKyXQ a span {
+  color: #d1d9fc;
+}
+
+.dark .MuiBottomNavigation-root {
+  background-color: #303030 !important;
+  box-shadow: none;
+}
+
+.MuiBottomNavigation-root{
+  background-color: transparent !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.MuiBottomNavigation-root {
+  border-radius: 50px;
+  min-height: 500px;
+  margin: 10% 0 10% 1rem;
+
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px 10px;
+  align-items: center;
+  width: 70px !important;
+  box-sizing: border-box;
+}
+
+.dark .MuiBottomNavigation-root {
+  background-color: rgb(0 0 0 / 50%) !important;
+}
+
+.dark .Footer_Footer__ndc6F a span {
+  color: #fff !important;
+}
+
+svg.MuiSvgIcon-root {
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: rgb(0 0 0 / 70%);
+  color: #fff;
+}
+
+.dark svg.MuiSvgIcon-root{
+  color: #d1d9fc !important;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+.dark a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+  svg.MuiSvgIcon-root {
+  border: 2px solid #5875f8;
+}
+a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+  svg.MuiSvgIcon-root {
+  border: 2px solid #fff;
+}
+
+
+
+.dark a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+  svg.MuiSvgIcon-root
+  path {
+  color: #5875f8;
+}
+a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+  svg.MuiSvgIcon-root
+  path {
+  color: #fff;
+}
+
+.MuiTouchRipple-root {
+  display: none;
+}
+.App {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.ant-image-preview-img {
+  max-width: 60% !important;
+  min-width: 60% !important;
+  height: auto;
+}
+
+.counter {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.counter strong {
+  font-weight: bolder;
+}
+
+.dark .Resume_github_icon__tetS9 svg:hover {
+  color: rgb(151, 149, 149) !important;
+}
+
+.dark .Preloader_coin__8oAcN {
+  border-color: #5649a6;
+}
+
+.ant-select-dropdown,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly,
+.MuiBottomNavigationAction-root.Mui-selected {
+  padding-top: 0 !important;
+}
+
+.dark,
+.dark .resumeTitle,
+.dark .resumeSocials ul li a,
+.dark .resumeContact a,
+.dark .resumeText,
+.dark .project_title,
+.dark .typewriter h1,
+.dark .typewriter p
+{
+  color: #fff !important;
+}
+.dark .project__block__box p,
+.dark .project__block__box:hover p,
+.dark .project__block__box h5{
+  color: rgb(220, 220, 220);
+}
+.dark .Project_project__block__box__as_btn__7\+IaM{
+  background: #01374b;
+}
+.project__block__box__as_btn{
+  background-color: #005775 !important;
+}
+@media (min-width: 0) and (max-width: 800.9px) {
+  .counter {
+    width: 85%;
+    margin: 0 auto;
+  }
+}

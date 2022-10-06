@@ -1,0 +1,190 @@
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typewriter h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 2rem 0 0.5rem 0;
+    font-size: clamp(1.625em, 0.73em + 4.36vw, 2em);
+    text-align: center;
+    font-weight: 680;
+    font-family: Pacaembu,sans-serif;
+    color: var(--heading-color,var(--color-gray-L800));
+    color: rgb(0 0 0 / 70%);
+}
+
+.typewriter p {
+  font-weight: bolder;
+  color: rgb(0 0 4 / 60%) ;
+}
+
+.typewriter #line_1,
+#line_2{
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter #line_1 {
+  animation: typewriter 2s steps(40) 0s 1 normal both;
+  margin: 0.5rem 0 0 0;
+}
+
+#line_2 {
+  animation: typewriter 3s steps(40) 0s 1 normal both;
+  animation-delay: 2s;
+  margin: 0.7rem 0 0 0;
+}
+
+#line_1,
+#line_2{
+  width: 115px;
+  font-size: 14px;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    border-right: none;
+  }
+
+  0.1% {
+    border-right: 1px solid rgb(220, 220, 220);
+  }
+
+  99.9% {
+    border-right: 1px solid rgb(220, 220, 220);
+  }
+
+  100% {
+    border: none;
+  }
+}
+
+i {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  padding-top: 1rem;
+  padding-left: 20px;
+}
+
+a {
+  color: rgb(220, 220, 220);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mainPicture {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../assets/forHome.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar {
+  height: 50px;
+}
+
+#as_app ul {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  min-height: 50px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-shadow: 0 10px 50px 0 rgb(5 4 62 / 25%);
+  box-shadow: 0 10px 50px 0 rgb(5 4 62 / 25%);
+}
+
+#as_app #as_app_bar {
+  background: transparent;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+#as_app ul a {
+  position: relative;
+  color: #000;
+  height: 45px;
+  width: 45px;
+  font-size: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+i[class^="ai_"]:before,
+i[class*=" ai_"]:before {
+  font-family: akar-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 0) and (max-width: 279.9px) {
+  .typewriter h1 {
+    width: 164px;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 12px;
+  }
+
+  .typewriter #line_1,
+  .typewriter #line_2 {
+    font-size: 10px;
+    width: 83px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 349.9px) {
+  .typewriter h1 {
+    width: 90%;
+    margin: 2rem 0 0.2rem 0;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .mainPicture {
+    height: 70vh;
+  }
+}

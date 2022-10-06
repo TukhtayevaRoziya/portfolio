@@ -1,0 +1,480 @@
+/* My Skills CSS */
+.skills {
+  margin-left: 4rem;
+}
+
+.skills .content {
+  padding: 0 0 40px;
+}
+
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-details .text {
+  width: 85%;
+}
+
+.skills-details p {
+  color: var(--black-color);
+  text-align: justify;
+}
+
+.skills .skills-details .experience {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.skills-details .experience .num {
+  color: var(--black-color);
+  font-size: 80px;
+}
+
+.title {
+  font-size: 30px;
+  padding: 0 5vw 30px;
+}
+
+.skills-details .experience .exp {
+  color: var(--black-color);
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.skills-details .boxes {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-details .box {
+  width: calc(100% / 5 - 20px);
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-details .boxes .topic {
+  font-size: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+.media-icons a {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+.span {
+  font-size: 55px;
+  letter-spacing: 0.15rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  color: #faebd7;
+  z-index: 4;
+}
+
+.background {
+  position: absolute;
+  height: 75%;
+  top: 4;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  opacity: 0.5;
+}
+
+/* new style */
+
+.green {
+  margin-top: 15px;
+}
+
+.green .progress,
+.red .progress,
+.orange .progress {
+  position: relative;
+  border-radius: 50%;
+}
+
+.green .progress,
+.red .progress,
+.orange .progress {
+  width: 125px;
+  height: 125px;
+}
+
+.green .progress {
+  border: 3px solid #53fc53;
+}
+
+.green .progress {
+  box-shadow: 0 0 15px #029502;
+}
+
+.green .progress,
+.red .progress,
+.orange .progress {
+  transition: all 1s ease;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  width: 120px;
+  height: 120px;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  transition: all 1s ease;
+}
+
+.green .progress .inner .water,
+.red .progress .inner .water,
+.orange .progress .inner .water {
+  position: absolute;
+  z-index: 1;
+  width: 200%;
+  height: 200%;
+  left: -50%;
+  border-radius: 40%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: spin;
+  animation-name: spin;
+}
+
+.green .progress .inner .water {
+  top: 25%;
+}
+
+.green .progress .inner .water {
+  background: rgb(0 255 0 / 50%);
+}
+
+.green .progress .inner .water,
+.red .progress .inner .water,
+.orange .progress .inner .water {
+  transition: all 1s ease;
+}
+
+.green .progress .inner .water,
+.red .progress .inner .water,
+.orange .progress .inner .water {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+.green .progress .inner .water {
+  box-shadow: 0 0 20px #03bc03;
+}
+
+.green .progress .inner .glare,
+.red .progress .inner .glare,
+.orange .progress .inner .glare {
+  position: absolute;
+  top: -120%;
+  left: -120%;
+  z-index: 5;
+  width: 200%;
+  height: 200%;
+  transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+.green .progress .inner .glare,
+.red .progress .inner .glare,
+.orange .progress .inner .glare {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.green .progress .inner .glare,
+.red .progress .inner .glare,
+.orange .progress .inner .glare {
+  transition: all 1s ease;
+}
+
+.green .progress .inner .percent,
+.red .progress .inner .percent,
+.orange .progress .inner .percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.green .progress .inner .percent,
+.red .progress .inner .percent,
+.orange .progress .inner .percent {
+  line-height: 120px;
+  font-size: 36.3076923076923px;
+}
+
+.green .progress .inner .percent {
+  color: #fff;
+}
+
+.green .progress .inner .percent {
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.green .progress .inner .percent,
+.red .progress .inner .percent,
+.orange .progress .inner .percent {
+  transition: all 1s ease;
+  margin: 0 auto;
+  right: 0;
+}
+
+.red {
+  margin-top: 15px;
+}
+
+.red .progress {
+  border: 5px solid #ed3b3b;
+}
+
+.red .progress {
+  box-shadow: 0 0 20px #7a0b0b;
+}
+
+.red .progress .inner .water {
+  top: 75%;
+}
+
+.red .progress .inner .water {
+  background: rgba(237, 59, 59, 0.5);
+}
+
+.red .progress .inner .water {
+  box-shadow: 0 0 20px #9b0e0e;
+}
+
+.red .progress .inner .percent {
+  color: #a30f0f;
+}
+
+.red .progress .inner .percent {
+  text-shadow: 0 0 10px #7a0b0b;
+}
+
+.orange,
+.green {
+  margin-top: 15px;
+}
+
+.orange .progress {
+  border: 3px solid #f07c3e;
+}
+
+.orange .progress {
+  box-shadow: 0 0 15px #7e320a;
+}
+
+.orange .progress .inner .water {
+  top: 50%;
+}
+
+.orange .progress .inner .water {
+  background: rgba(240, 124, 62, 0.5);
+}
+
+.orange .progress .inner .water {
+  box-shadow: 0 0 20px #a0400c;
+}
+
+.orange .progress .inner .percent {
+  color: #fff;
+}
+
+.orange .progress .inner .percent {
+  text-shadow: 0 0 10px #7e320a;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 0) and (max-width: 549.9px) {
+  .title{
+    padding: 0 5%;
+  }
+  .skills .content {
+    padding: 0;
+  }
+
+  .skills {
+    margin: 0 0 3rem 0;
+    padding: 30px 5vw 5em;
+  }
+
+  .skills,
+  .skills-details {
+    flex-direction: column;
+  }
+
+  .skills-details .text {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .skills-details .boxes {
+    width: 100%;
+  }
+
+  .red,
+  .green,
+  .orange {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-details p {
+    text-align: inherit;
+  }
+
+  .javascript {
+    text-align: center;
+  }
+
+  .skills-details .boxes .topic {
+    font-size: 16px;
+  }
+
+  .skills-details .box {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (min-width: 0) and (max-width: 420.9px) {
+  .skills-details .box {
+    width: calc(100% / 1.5 - 20px);
+  }
+
+  .skills-details .boxes {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 700.9px) {
+  .skills-details .boxes .topic{
+    font-size: 16px;
+  }
+  .skills .content {
+    padding: 0;
+  }
+
+  .skills {
+    margin: 0 0 3rem 0;
+    padding: 30px 5vw;
+  }
+
+  .skills,
+  .skills-details {
+    flex-direction: column;
+  }
+
+  .skills-details .text {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .skills-details .boxes {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+
+  .red,
+  .green,
+  .orange {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-details p {
+    text-align: inherit;
+  }
+
+  .topic {
+    font-size: 16px;
+  }
+
+  .javascript {
+    text-align: center;
+  }
+
+  .skills-details .box {
+    width: calc(100% / 3 - 20px);
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000.9px) {
+  .skills-details .boxes{
+    justify-content: space-between;
+    width: 90%;
+  }
+  .skills-details .boxes .topic{
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600.9px) and (max-width: 700.9px) {
+  .skills {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1179.9px) {
+  .skills-details .box {
+    width: calc(100% / 4 - 20px);
+  }
+}

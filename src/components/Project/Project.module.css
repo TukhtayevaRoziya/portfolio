@@ -1,0 +1,138 @@
+.project {
+  display: flex;
+  padding: 30px 5vw;
+  margin-left: 3rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project_title {
+  text-align: center;
+  color: rgb(0 0 0 / 70%);
+}
+
+.project__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project__block__box {
+  margin-top: 10px;
+  padding: 10px;
+  width: 32.5%;
+  background: #eaebed19;
+  border-radius: 10px;
+  transition: 0.3s all linear;
+}
+
+.project__block__box:hover {
+  background: #eaebed5f;
+  transform: translatey(-5px);
+}
+
+.project__block__box img {
+  width: 100%;
+  object-fit: cover;
+  height: 220px;
+}
+
+.project__block__box h3 {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.project__block__box p {
+  margin: 10px 0 10px 10px;
+  color: #151a1e;
+  transition: 0.3s all linear;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  height: 60px;
+  align-content: center;
+  align-items: center;
+}
+
+.project__block__box:hover p {
+  color: #151a1e;
+  font-weight: 600;
+}
+
+.project__block__box h5 {
+  margin: 10px 0;
+  color: #151a1e;
+  font-weight: 400;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.project__block__box__as_btn {
+  position: relative;
+  overflow: hidden;
+  padding: 7px 0;
+  background: #4c4c4c;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  width: 35%;
+  margin: 1rem 0 0.2rem !important;
+}
+
+.project__block__box__as_btn a {
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.project__block__box__as_btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #eaebed;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.project__block__box__as_btn:hover::before {
+  transform: translate(-50%, -50%) scale(10);
+  opacity: 1;
+}
+
+.project__block__box__as_btn:hover a {
+  color: #01374b;
+  font-weight: bolder;
+}
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  .project {
+    margin: 0 auto 2rem;
+  }
+
+  .project__block__box {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+
+  .project__block__box__as_btn{
+    width: 60%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1100.9px) {
+    .project__block__box {
+        width: 48%;
+        margin-bottom: 2rem;
+      }
+}

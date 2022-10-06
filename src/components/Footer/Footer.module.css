@@ -1,0 +1,52 @@
+.Footer {
+    flex-direction         : column;
+    backdrop-filter        : blur(5px);
+    overflow               : hidden;
+    position               : fixed;
+    left                   : 0;
+    -webkit-box-pack       : start;
+    min-height             : 100%;
+    top                    : 0;
+    width                  : 60px;
+    justify-content        : space-around !important;
+    z-index: 10;
+}
+
+
+.Footer a,
+.Footer a span {
+    max-width : 60px;
+    min-width : 60px;
+    padding   : 0;
+    text-align: center;
+    /* color: #fff !important; */
+}
+
+@media (min-width:0) and (max-width:600.9px) {
+
+    .Footer {
+        overflow       : hidden;
+        position       : fixed;
+        bottom         : 0;
+        margin-top     : 2rem;
+        width          : 100%;
+        left           : inherit;
+        justify-content: space-around !important;
+        flex-direction : row;
+        min-height: 56px;
+        top: inherit;
+    }
+
+    .Footer a {
+        max-width: 20px;
+        min-width: 20px;
+        padding  : 0;
+        max-width: 20%;
+        min-width: 20%;
+    }
+
+    .Footer a span{
+        max-width: 100%;
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.body{
+  height: calc( 100vh - 83.400px - 56px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.box {
+  perspective: 120px;
+}
+
+.coin {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 4px solid #8f8c2d;
+  animation: spin 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateY(540deg);
+  }
+}
