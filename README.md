@@ -1,2 +1,1 @@
-portfolio v2
-# https://tukhtayevaroziya.github.io/portfolio/
+https://tukhtayevaroziya.github.io/portfolio/
