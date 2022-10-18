@@ -203,6 +203,15 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 .project__block__box__as_btn{
   background-color: #005775 !important;
 }
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  .MuiBottomNavigation-root{
+    min-height: 70px;
+    min-width: 90%;
+    margin: 0 5% 1rem;
+  }
+}
+
 @media (min-width: 0) and (max-width: 800.9px) {
   .counter {
     width: 85%;
