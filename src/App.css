@@ -78,8 +78,9 @@ body:before {
 .MuiBottomNavigation-root {
   border-radius: 50px;
   min-height: 500px;
-  margin: 10% 0 10% 1rem;
-
+  margin-left: 1rem;
+  margin-top: calc((100vh - 500px) / 2);
+  margin-bottom: calc((100vh - 500px) / 2);
   display: flex;
   justify-content: center;
   background-color: #fff;
