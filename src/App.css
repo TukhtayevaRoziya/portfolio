@@ -122,8 +122,6 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
   border: 2px solid #fff;
 }
 
-
-
 .dark a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
   svg.MuiSvgIcon-root
   path {
@@ -140,7 +138,6 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 }
 .App {
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 .ant-image-preview-img {
@@ -203,6 +200,13 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 }
 .project__block__box__as_btn{
   background-color: #005775 !important;
+}
+
+.mainPicture{
+  filter: grayscale(1);
+}
+.dark .mainPicture{
+  filter: inherit;
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {

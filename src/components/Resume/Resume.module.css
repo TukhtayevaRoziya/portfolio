@@ -1,232 +1,231 @@
 .Resume {
-    display        : flex;
-    padding        : 30px 5vw;
-    margin-left    : 3rem;
-    flex-wrap      : wrap;
-    justify-content: space-around;
+  display: flex;
+  padding: 30px 5vw;
+  margin-left: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .picture {
-    border-radius: 50%;
-    width        : 23%;
+  border-radius: 50%;
+  width: 23%;
 }
 
 .block {
-    width: 65%;
+  width: 65%;
 }
 
 .mine .extra {
-    width: 85%;
+  width: 85%;
 }
 
 .about_me {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.text{
-    color: #00000090;
+.text {
+  color: #00000090;
 }
 
 .about_me h3 {
-    margin: 0.3rem 0;
+  margin: 0.3rem 0;
 }
 
 .extra {
-    width        : 32%;
-    padding-right: 1rem;
+  width: 32%;
+  padding-right: 1rem;
 }
 
 .My_skills {
-    display       : flex;
-    flex-direction: column;
-    width         : 26%;
+  display: flex;
+  flex-direction: column;
+  width: 26%;
 }
 
 .mine {
-    width: 37%;
+  width: 37%;
 }
 
 .socials ul {
-    display        : flex;
-    padding-left   : 0;
-    justify-content: space-evenly;
-    width          : 70%;
-    margin         : 1.7rem auto;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 1.7rem auto;
 }
 
 .socials ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .socials ul li a {
-    color: #151a1e;
+  color: #151a1e;
 }
 
 .socials ul li a svg {
-    font-size   : 30px;
-    margin-right: 10px;
-    transition  : 0.3s ease;
+  font-size: 30px;
+  margin-right: 10px;
+  transition: 0.3s ease;
 }
 
 .socials ul li a svg:hover {
-    color: #179af1;
+  color: #179af1;
 }
 
 .socials ul li .facebook_icon {
-    transition: 0.014s ease;
+  transition: 0.014s ease;
 }
 
 .socials ul li .facebook_icon svg:hover {
-    color    : #175cf1;
-    transform: rotate(360deg);
+  color: #175cf1;
+  transform: rotate(360deg);
 }
 
 .socials ul li .telegram_icon svg:hover {
-    color      : #00f7ff;
-    margin-top : -5px;
-    margin-left: 3px;
+  color: #00f7ff;
+  margin-top: -5px;
+  margin-left: 3px;
 }
 
 .socials ul li .linkedin_icon svg:hover {
-    font-size: 32px;
-    transform: rotate(-360deg);
-    color    : #0a66c2;
+  font-size: 32px;
+  transform: rotate(-360deg);
+  color: #0a66c2;
 }
 
 .github_icon svg:hover {
-    color    : #000 !important;
-    transform: rotateZ(45deg)
+  color: #000 !important;
+  transform: rotateZ(45deg);
 }
 
 .contact {
-    display       : flex;
-    flex-direction: column;
-    margin-top    : 1rem;
-    font-size     : 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  font-size: 16px;
 }
 
 .contact a {
-    text-decoration: none;
-    margin-bottom  : 1rem;
-    letter-spacing : 1.3px;
-    width          : 100%;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  letter-spacing: 1.3px;
+  width: 100%;
 }
 
 .title,
 .contact a {
-    color: rgb(0 0 0 / 75%);
+  color: rgb(0 0 0 / 75%);
 }
 
-.title1{
-    color: #fff !important;
+.title1 {
+  color: #fff !important;
 }
 
-#mail{
-    font-size: 13.3px;
+#mail {
+  font-size: 13.3px;
 }
 
-@media (min-width:0) and (max-width:600.9px) {
-    .Resume {
-        display       : flex;
-        padding       : 30px 5vw;
-        flex-direction: column;
-        align-items   : center;
-        margin-bottom : 3rem;
-        margin-left   : 0;
-    }
+@media (min-width: 0) and (max-width: 600.9px) {
+  .Resume {
+    display: flex;
+    padding: 30px 5vw 3rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: 0;
+  }
 
-    .mine {
-        width: 100%;
-        margin-bottom: 3rem;
-    }
+  .mine {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 
-    .picture {
-        height       : auto;
-        width        : 60%;
-        border-radius: 50%;
-    }
+  .picture {
+    height: auto;
+    width: 60%;
+    border-radius: 50%;
+  }
 
-    .My_skills {
-        width: 100%;
-    }
+  .My_skills {
+    width: 100%;
+  }
 
-    .title {
-        margin: 0;
-    }
+  .title {
+    margin: 0;
+  }
 
-    .title1 {
-        margin: 0 0 .5rem 0;
-    }
+  .title1 {
+    margin: 0 0 0.5rem 0;
+  }
 
-    .text {
-        margin-top : 10px;
-        color      : #cbcbcb;
-        line-height: 28px;
-    }
+  .text {
+    margin-top: 10px;
+    color: #cbcbcb;
+    line-height: 28px;
+  }
 
-    .mine .extra {
-        width  : 100%;
-        padding: 0;
-    }
+  .mine .extra {
+    width: 100%;
+    padding: 0;
+  }
 
-    .block {
-        width  : 100%;
-        padding: 0;
-    }
+  .block {
+    width: 100%;
+    padding: 0;
+  }
 }
 
-@media (min-width:0) and (max-width:390px) {
-    #mail {
-        font-size: 9px;
-    }
+@media (min-width: 0) and (max-width: 390px) {
+  #mail {
+    font-size: 9px;
+  }
 }
 
-@media (min-width:601px) and (max-width:800.9px) {
-    .Resume {
-        justify-content: center;
-    }
+@media (min-width: 601px) and (max-width: 800.9px) {
+  .Resume {
+    justify-content: center;
+  }
 
-    .picture {
-        width: 55%;
-    }
+  .picture {
+    width: 55%;
+  }
 
-    .extra {
-        width: 65%;
-    }
+  .extra {
+    width: 65%;
+  }
 
-    .My_skills {
-        width: 65%;
-    }
+  .My_skills {
+    width: 65%;
+  }
 
-    .mine {
-        width: 65%;
-    }
+  .mine {
+    width: 65%;
+  }
 
-    .mine .extra {
-        width: 100%;
-    }
+  .mine .extra {
+    width: 100%;
+  }
 
-    .contact a {
-        font-size: 14.5px;
-    }
-
+  .contact a {
+    font-size: 14.5px;
+  }
 }
 
-@media (min-width:801px) and (max-width:1149.9px) {
-    .picture {
-        width : 55%;
-        margin: 0 1rem 2rem;
-    }
+@media (min-width: 801px) and (max-width: 1149.9px) {
+  .picture {
+    width: 55%;
+    margin: 0 1rem 2rem;
+  }
 
-    .My_skills {
-        width: 50%;
-    }
+  .My_skills {
+    width: 50%;
+  }
 
-    .extra,
-    .mine,
-    .about_me {
-        width: 45%;
-    }
+  .extra,
+  .mine,
+  .about_me {
+    width: 45%;
+  }
 }

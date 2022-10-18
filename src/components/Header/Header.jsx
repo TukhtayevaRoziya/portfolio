@@ -6,8 +6,6 @@ import { useTranslation } from "react-i18next";
 const Header = () => {
   const { t } = useTranslation();
 
-  // const line = document.getElementById('line_1').toString().length
-  // console.log(line);
   return (
     <>
       <div className={style.typewriter + ' typewriter'}>
@@ -17,7 +15,7 @@ const Header = () => {
           From Uzbekistan
         </p>
       </div> 
-      <div className={style.mainPicture}></div> 
+      <div className={style.mainPicture + ' mainPicture'}></div> 
     </>
   );
 };

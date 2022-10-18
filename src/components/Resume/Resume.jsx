@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import {
-  faFacebookF,
   faGithub,
   faLinkedin,
   faTelegramPlane,
@@ -19,7 +18,7 @@ const Resume = () => {
 
   return (
     <div className={style.Resume}>
-      <img className={style.picture} src={coder} alt="" />
+      <img className={style.picture} src={coder} alt="" draggable={false} />
       <div className={style.block + " " + style.about_me}>
         <h3 className={style.title + ' resumeTitle'}>{t("aboutMe")}</h3>
         <p className={style.text + ' resumeText'}>
@@ -56,11 +55,6 @@ const Resume = () => {
           <div className={style.socials + ' resumeSocials'}>
             <ul>
               <li>
-                <a className={style.facebook_icon} href='/'>
-                  <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
-                </a>
-              </li>
-              <li>
                 <a
                   className={style.telegram_icon}
                   href="https://t.me/TukhtayevaRoziya"
@@ -88,7 +82,6 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-        {/* <a href="mailto:" href></a> */}
         <div className={style.block + " " + style.extra}>
           <h3 className={style.title + ' resumeTitle'}>{t("contact")}</h3>
           <div className={style.contact + ' resumeContact'}>
