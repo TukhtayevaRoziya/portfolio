@@ -30,7 +30,7 @@
 }
 
 .skills-details .experience .num {
-  color: var(--black-color);
+  color: rgb(0 0 0 / 65%);
   font-size: 80px;
 }
 
@@ -40,11 +40,17 @@
 }
 
 .skills-details .experience .exp {
-  color: var(--black-color);
+  color: rgb(0 0 0 / 65%);
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
   margin: 0 6px;
+}
+
+.dark .skills-details .experience .exp,
+.dark .skills-details .experience .num {
+  color: rgb(255 255 255);
+
 }
 
 .skills-details .boxes {
@@ -119,12 +125,19 @@
   height: 125px;
 }
 
-.green .progress {
-  border: 3px solid #53fc53;
+.dark .green .progress {
+  box-shadow: 0 0 10px rgb(255 255 255 / 70%);
 }
 
 .green .progress {
-  box-shadow: 0 0 15px #029502;
+  box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+}
+
+.green .progress .inner .percent {
+  color: rgb(0 0 0 / 70%);
+}
+.dark .green .progress .inner .percent {
+  color: rgb(255 255 255 / 70%);
 }
 
 .green .progress,
@@ -176,9 +189,9 @@
   top: 25%;
 }
 
-.green .progress .inner .water {
+/* .green .progress .inner .water {
   background: rgb(0 255 0 / 50%);
-}
+} */
 
 .green .progress .inner .water,
 .red .progress .inner .water,
@@ -193,8 +206,12 @@
   animation-duration: 10s;
 }
 
+.dark .green .progress .inner .water {
+  box-shadow: 0 0 20px rgb(255 255 255 / 70%);
+}
+
 .green .progress .inner .water {
-  box-shadow: 0 0 20px #03bc03;
+  box-shadow: 0 0 20px rgb(0 0 0 / 40%);
 }
 
 .green .progress .inner .glare,
@@ -238,14 +255,6 @@
 .orange .progress .inner .percent {
   line-height: 120px;
   font-size: 36.3076923076923px;
-}
-
-.green .progress .inner .percent {
-  color: #fff;
-}
-
-.green .progress .inner .percent {
-  text-shadow: 0 0 10px #ffffff;
 }
 
 .green .progress .inner .percent,
@@ -403,17 +412,12 @@
   }
 }
 
-@media (min-width: 550px) and (max-width: 700.9px) {
+@media (min-width: 550px) and (max-width: 800.9px) {
   .skills-details .boxes .topic{
     font-size: 16px;
   }
   .skills .content {
     padding: 0;
-  }
-
-  .skills {
-    margin: 0 0 3rem 0;
-    padding: 30px 5vw;
   }
 
   .skills,
@@ -428,7 +432,7 @@
 
   .skills-details .boxes {
     width: 100%;
-    justify-content: space-around;
+    justify-content: inherit;
     margin-bottom: 3rem;
   }
 
@@ -457,7 +461,14 @@
   }
 }
 
-@media (min-width: 701px) and (max-width: 1000.9px) {
+@media (min-width: 550px) and (max-width: 700.9px) {
+  .skills {
+    margin: 0 0 3rem 0;
+    padding: 30px 5vw;
+}
+}
+
+@media (min-width: 801px) and (max-width: 1000.9px) {
   .skills-details .boxes{
     justify-content: space-between;
     width: 90%;
@@ -473,7 +484,7 @@
   }
 }
 
-@media (min-width: 701px) and (max-width: 1179.9px) {
+@media (min-width: 801px) and (max-width: 1179.9px) {
   .skills-details .box {
     width: calc(100% / 4 - 20px);
   }
