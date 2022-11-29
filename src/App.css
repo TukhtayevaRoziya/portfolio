@@ -3,7 +3,7 @@ body {
   color: #02021a !important;
   font-family: 'Fira Code', monospace;
   margin: 0;
-  background: url(./assets/bg.png) left/cover !important;
+  background: url(./assets/bg.webp) left/cover !important;
   background-repeat: repeat;
 }
 

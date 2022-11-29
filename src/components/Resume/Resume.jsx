@@ -9,7 +9,7 @@ import {
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import coder from "../../assets/girl_coder.jpg";
+import coder from "../../assets/girl_coder.webp";
 
 import style from "./Resume.module.css";
 
