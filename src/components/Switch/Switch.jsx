@@ -49,6 +49,7 @@ const Switch = () => {
               id="checkbox"
               className="checkbox"
               type="checkbox"
+              aria-label="Check"
             />
             <label htmlFor="checkbox" />
           </span>

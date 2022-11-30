@@ -32,18 +32,21 @@ export default class Footer extends Component {
             value="home"
             component={NavLink}
             to={pathMap[0]}
+            ariaLabel='project'
           />
           <BottomNavigationAction
             icon={<AssignmentIndIcon />}
             value="resume"
             component={NavLink}
             to={pathMap[1]}
+            ariaLabel='project'
           />
           <BottomNavigationAction
             icon={<InsertDriveFileRoundedIcon />}
             value="project"
             component={NavLink}
             to={pathMap[2]}
+            ariaLabel='project'
           />
 
           <BottomNavigationAction
@@ -51,6 +54,7 @@ export default class Footer extends Component {
             value="service"
             component={NavLink}
             to={pathMap[3]}
+            ariaLabel='project'
           />
         </BottomNavigation>
       </>
