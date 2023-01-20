@@ -70,7 +70,7 @@ body:before {
   box-shadow: none;
 }
 
-.MuiBottomNavigation-root{
+.MuiBottomNavigation-root {
   background-color: transparent !important;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -98,6 +98,18 @@ body:before {
   color: #fff !important;
 }
 
+.dark .Project_project__block__box__xNCOi p,
+.dark .Project_project__block__box__xNCOi h5,
+.dark .Project_project__block__box__xNCOi:hover p {
+  color: rgb(220, 220, 220);
+  margin-top: 0;
+}
+
+.dark .Project_project__block__box__xNCOi h5{
+  margin-top: 1rem;
+}
+
+
 svg.MuiSvgIcon-root {
   border-radius: 50%;
   padding: 10px;
@@ -108,12 +120,13 @@ svg.MuiSvgIcon-root {
   color: #fff;
 }
 
-.dark svg.MuiSvgIcon-root{
+.dark svg.MuiSvgIcon-root {
   color: #d1d9fc !important;
   background-color: rgba(0, 0, 0, 0.397);
 }
 
-.dark a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+.dark
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
   svg.MuiSvgIcon-root {
   border: 2px solid #5875f8;
 }
@@ -122,7 +135,8 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
   border: 2px solid #fff;
 }
 
-.dark a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+.dark
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
   svg.MuiSvgIcon-root
   path {
   color: #5875f8;
@@ -186,31 +200,31 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 .dark .resumeText,
 .dark .project_title,
 .dark .typewriter h1,
-.dark .typewriter p
-{
+.dark .typewriter p {
   color: #fff !important;
 }
 .dark .project__block__box p,
 .dark .project__block__box:hover p,
-.dark .project__block__box h5{
+.dark .project__block__box h5 {
   color: rgb(220, 220, 220);
 }
-.dark .Project_project__block__box__as_btn__7\+IaM{
+.dark .Project_project__block__box__as_btn__7\+IaM,
+.dark .Project_project__block__box__as_btn__TLT5v  {
   background: #01374b;
 }
-.project__block__box__as_btn{
+.project__block__box__as_btn {
   background-color: #005775 !important;
 }
 
-.mainPicture{
+.mainPicture {
   filter: grayscale(1);
 }
-.dark .mainPicture{
+.dark .mainPicture {
   filter: inherit;
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {
-  .MuiBottomNavigation-root{
+  .MuiBottomNavigation-root {
     min-height: 70px;
     min-width: 90%;
     margin: 0 5% 1rem;

@@ -47,15 +47,15 @@
 }
 
 .project__block__box p {
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 0 10px;
   color: #151a1e;
   transition: 0.3s all linear;
   font-weight: 600;
   font-size: 14px;
   display: flex;
-  height: 60px;
+  height: 40px;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .project__block__box:hover p {

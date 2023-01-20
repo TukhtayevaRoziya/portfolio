@@ -11,11 +11,12 @@ import MService from '../../assets/projects/MService.webp'
 import youthCenter from '../../assets/projects/YouthCenter.webp'
 import aliExpress from '../../assets/projects/aliExpress.webp'
 import build from '../../assets/projects/build.webp'
-import ekabu from '../../assets/projects/ekabu.webp'
 import buildAdmin from '../../assets/projects/buildAdmin.webp'
 import doctor from '../../assets/projects/doctor.webp'
 import las from '../../assets/projects/las.webp'
 import nura from '../../assets/projects/nuraElite.webp'
+import cyber_sport from '../../assets/projects/cyber_sport.png'
+import and_sport from '../../assets/projects/andijan_sport.png'
 
 import 'antd/dist/antd.css'
 import style from './Project.module.css'
@@ -26,71 +27,148 @@ const Project = () => {
   const data = [
     {
       id: 0,
-      imgSrc: nura,
-      projectName: 'Nura Elite ',
-      technology: 'Css3, React, Yandex Map',
-      time: `1  ${t('day')}`,
-      projectLink: 'https://nuraelite.netlify.app/',
+      image: nura,
+      title: `Nura Elite `,
+      technologies: `Css3, React, Yandex Map`,
+      time: 1,
+      link: 'https://nuraelite.netlify.app/',
     },
     {
-      id: 1,
-      imgSrc: oksyG,
-      projectName: `Oksy-G Milk `,
-      technology: ` HTML5, Css3, Bootsrap4, JavaScript, jQuery`,
-      time: `20  ${t('day')}`,
-      projectLink: 'https://tukhtayevaroziya.github.io/Oksy-G-Milk-Project/',
+      id: 12,
+      image: cyber_sport,
+      title: `Cyber Sport`,
+      technologies: ` Css3, React, Ant design`,
+      time: 1,
+      link: 'https://cyber-sport.netlify.app/',
     },
     {
-      id: 2,
-      imgSrc: hotel,
-      projectName: `Hotel `,
-      technology: ` Css, React, Redux, React-Redux, React-Router,
-      Redux-form`,
-      time: `2  ${t('week')}`,
-      projectLink: 'https://tukhtayevaroziya.github.io/hotel-project-/',
-    },
-    {
-      id: 3,
-      imgSrc: youthCenter,
-      projectName: `Raven `,
-      technology: ` HTML5, Css3, Bootsrap4, JavaScript, jQuery`,
-      time: `1  ${t('week')}`,
-      projectLink: 'https://robiyaxon.github.io/Robiya-coder-Markaz/',
+      id: 13,
+      image: and_sport,
+      title: `Andijan Sport`,
+      technologies: ` Css3, React, Ant design, React-router-dom, `,
+      time: 3,
+      link: 'https://andijan-football.netlify.app/',
     },
     {
       id: 4,
-      imgSrc: aliExpress,
-      projectName: `AliExpress Clone `,
-      technology:
-        ' Css, React, Redux, React-Redux, React-Router, Redux-form, Material Ui, Ant Design',
-      time: `5  ${t('day')}`,
-      projectLink: 'https://robiyaxon.github.io/programmer-girls-React/',
+      image: aliExpress,
+      title: `AliExpress Clone`,
+      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      Redux-form, Material Ui, Ant Design`,
+      time: 5,
+      link: 'https://robiyaxon.github.io/programmer-girls-React/',
+    },
+    {
+      id: 5,
+      image: las,
+      title: `LAS`,
+      technologies: ` Css, React, React-Router, NextJs, Ant Design`,
+      time: 5,
+      link: 'https://papaya-puffpuff-1aa409.netlify.app/',
+    },
+    {
+      id: 6,
+      image: doctor,
+      title: `Doctor`,
+      technologies: ` Css, React, Redux, React-Redux, React-Router, Ant
+      design`,
+      time: ' 1,5',
+      link: 'https://diplomishi.netlify.app/',
+    },
+    {
+      id: 7,
+      image: charismo,
+      title: `Charismo`,
+      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      Redux-form, TypeScript, Aos, Ant design, Material Ui`,
+      time: ' 5',
+      link: 'https://tukhtayevaroziya.github.io/charismo/',
+    },
+    {
+      id: 1,
+      image: oksyG,
+      title: `Oksy-G Milk`,
+      technologies: ` HTML5, Css3, Bootsrap4, JavaScript, jQuery`,
+      time: 20,
+      link: 'https://tukhtayevaroziya.github.io/Oksy-G-Milk-Project/',
+    },
+    {
+      id: 2,
+      image: hotel,
+      title: `Hotel`,
+      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      Redux-form`,
+      time: 14,
+      link: 'https://tukhtayevaroziya.github.io/hotel-project-/',
+    },
+    {
+      id: 3,
+      image: youthCenter,
+      title: `Raven`,
+      technologies: ` HTML5, Css3, Bootsrap4, JavaScript, jQuery`,
+      time: 7,
+      link: 'https://robiyaxon.github.io/Robiya-coder-Markaz/',
+    },
+
+    {
+      id: 8,
+      image: MService,
+      title: `Mers Shop`,
+      technologies: `  Css, React, Redux, React-Router,
+      React-query, Swiper, axios, react-i18next,
+      Prop-types, Redux-thunk`,
+      time: ' 5',
+      link: 'http://178.128.85.100:6002/',
+      condition: `(${t('real') + ' ' + t('project')})`,
+    },
+    {
+      id: 9,
+      image: build,
+      title: `Build`,
+      technologies: `  Css, React, React-Redux,
+      React-Router, Ant design,
+      react-yandex-maps, react-i18next, react-bootstrap`,
+      time: ' 7',
+      link: 'http://buildmegaservice.com',
+      condition: `(${t('real') + ' ' + t('project')})`,
+    },
+    {
+      id: 10,
+      image: hydroAdmin,
+      title: `Hydro Admin`,
+      technologies: `  Css, React, Redux, React-Redux,
+      React-Router, Redux-form, Reactsrap, styled-component, react-i18next`,
+      time: ' 7',
+      condition: `(${t('real') + ' ' + t('project')})`,
+      close: true,
+    },
+    {
+      id: 11,
+      image: buildAdmin,
+      title: `Build Admin`,
+      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      Redux-thunk, Ant design, axios, node-sass`,
+      time: ' 7',
+      condition: `(${t('real') + ' ' + t('project')})`,
+      close: true,
     },
   ]
 
   const dataMap = data.map((d) => (
-    <div
-      className={style.project__block__box + ' project__block__box'}
-      key={d.id}
-    >
-      <Image src={d.imgSrc} />
+    <div className={style.project__block__box} key={d.id}>
+      <Image src={d.image} />
       <h3>
-        {d.projectName}
-        {t('project')}
+        {d.title} {t('project')} {d.condition}
       </h3>
-      <p>
-        {t('technology')} {d.technology}
-      </p>
-      <h5>
-        {t('time')} {d.time}
-      </h5>
-      <div
-        className={
-          style.project__block__box__as_btn + ' project__block__box__as_btn'
-        }
-      >
-        {d.projectLink ? (
-          <a href={d.projectLink} target="_blank" rel="noopener noreferrer">
+      <p>{t('technology') + d.technologies}</p>
+      {!d.close ? (
+        <h5>{t('time') + d.time + ' ' + t('day')}</h5>
+      ) : (
+        <h5>Teamwork</h5>
+      )}
+      <div className={style.project__block__box__as_btn}>
+        {!d.close ? (
+          <a href={d.link} target="_blank" rel="noopener noreferrer">
             {t('visit')}
           </a>
         ) : (
@@ -103,196 +181,7 @@ const Project = () => {
   return (
     <div className={style.project}>
       <h1 className={style.project_title + ' project_title'}>{t('navbar1')}</h1>
-      <div className={style.project__block}>
-        {dataMap}
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={las} />
-          <h3>LAS {t('project')}</h3>
-          <p>{t('technology')} Css, React, React-Router, NextJs, Ant Design</p>
-          <h5>
-            {t('time')} 5 {t('day')}
-          </h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <a
-              href="https://papaya-puffpuff-1aa409.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('visit')}
-            </a>
-          </div>
-        </div>
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={doctor} />
-          <h3>Doctor {t('project')}</h3>
-          <p>
-            {t('technology')} Css, React, Redux, React-Redux, React-Router, Ant
-            design
-          </p>
-          <h5>
-            {t('time')} 1,5 {t('day')}
-          </h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <a
-              href="https://diplomishi.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('visit')}
-            </a>
-          </div>
-        </div>
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={charismo} />
-          <h3>Charismo {t('project')}</h3>
-          <p>
-            {t('technology')} Css, React, Redux, React-Redux, React-Router,
-            Redux-form, TypeScript, Aos, Ant design, Material Ui
-          </p>
-          <h5>
-            {t('time')} {t('active')}
-          </h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <a
-              href="https://tukhtayevaroziya.github.io/charismo/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('visit')}
-            </a>
-          </div>
-        </div>
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={ekabu} />
-          <h3>Mebel Ekabu {t('project')}</h3>
-          <p>
-            {t('technology')} Css, React, Redux, React-Redux, React-Router,
-            Redux-form, Ant design, Material Ui, react-yandex-maps
-          </p>
-          <h5>
-            {t('time')} {t('active')}
-          </h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <a
-              href="https://robiyaxon.github.io/EkabuMebel/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('visit')}
-            </a>
-          </div>
-        </div>
-
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={MService} />
-          <h3>
-            Mers Shop {t('project')} ({t('real')} {t('project')})
-          </h3>
-          <p>
-            {t('technology')} Css, React, Redux, React-Redux, React-Router,
-            React-query, Swiper, react-yandex-maps, axios, react-i18next,
-            react-facebook-login, eact-google-login, Prop-types, Final-form,
-            Redux-thunk, i18next
-          </p>
-          <h5>
-            {t('time')} {t('active')}
-          </h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <a
-              href="http://178.128.85.100:6002/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('visit')}
-            </a>
-          </div>
-        </div>
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={build} />
-          <h3>
-            Build {t('project')} ({t('real')} {t('project')})
-          </h3>
-          <p>
-            {t('technology')} Css, Bootstrap, React, Redux, React-Redux,
-            React-Router, Redux-form, Ant design, Material Ui,
-            react-yandex-maps, styled-component, react-i18next, react-bootstrap,
-            aos, node-sass
-          </p>
-          <h5>
-            {t('time')} {t('active')}
-          </h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <a
-              href="http://buildmegaservice.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('visit')}
-            </a>
-          </div>
-        </div>
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={hydroAdmin} />
-          <h3>
-            Hydro Admin {t('project')} ({t('real')} {t('project')})
-          </h3>
-          <p>
-            {t('technology')} Css, Bootstrap, React, Redux, React-Redux,
-            React-Router, Redux-form, Ant design, Material Ui, axios, React
-            Bootstrap, Final-form, Redux-thunk, Reactstrap, NextJs
-          </p>
-          <h5>Teamwork</h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <NavLink to="/project">{t('closedSite')}</NavLink>
-          </div>
-        </div>
-        <div className={style.project__block__box + ' project__block__box'}>
-          <Image src={buildAdmin} />
-          <h3>
-            Build Admin {t('project')} ({t('real')} {t('project')})
-          </h3>
-          <p>
-            {t('technology')} Css, React, Redux, React-Redux, React-Router,
-            Redux-thunk, Ant design, Material Ui, axios
-          </p>
-          <h5>Teamwork</h5>
-          <div
-            className={
-              style.project__block__box__as_btn + ' project__block__box__as_btn'
-            }
-          >
-            <NavLink to="/project">{t('closedSite')}</NavLink>
-          </div>
-        </div>
-      </div>
+      <div className={style.project__block}>{dataMap}</div>
     </div>
   )
 }

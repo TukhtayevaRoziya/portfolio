@@ -9,7 +9,7 @@ import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 import style from "./Footer.module.css";
 
-export default class Footer extends Component { 
+export default class Footer2 extends Component { 
   state = {
     value: 0,
     pathMap: ["/", "/resume", "/project", "/skills"],
@@ -21,7 +21,6 @@ export default class Footer extends Component {
   render() {
     const { value, pathMap } = this.state;
     return (
-      <>
         <BottomNavigation
           value={value}
           onChange={this.handleChange}
@@ -32,21 +31,21 @@ export default class Footer extends Component {
             value="home"
             component={NavLink}
             to={pathMap[0]}
-            ariaLabel='project'
+            aria-label='project'
           />
           <BottomNavigationAction
             icon={<AssignmentIndIcon />}
             value="resume"
             component={NavLink}
             to={pathMap[1]}
-            ariaLabel='project'
+            aria-label='project'
           />
           <BottomNavigationAction
             icon={<InsertDriveFileRoundedIcon />}
             value="project"
             component={NavLink}
             to={pathMap[2]}
-            ariaLabel='project'
+            aria-label='project'
           />
 
           <BottomNavigationAction
@@ -54,10 +53,9 @@ export default class Footer extends Component {
             value="service"
             component={NavLink}
             to={pathMap[3]}
-            ariaLabel='project'
+            aria-label='project'
           />
         </BottomNavigation>
-      </>
     );
   }
 }
