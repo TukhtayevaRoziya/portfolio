@@ -107,9 +107,9 @@ const Resume = () => {
               <FaTelegramPlane />
               @TukhtayevaRoziya
             </a>
-            <a href="tel:+998905280770">
+            {/* <a href="tel:+998905280770">
               <FaPhoneAlt /> +998 905280770
-            </a>
+            </a> */}
             <a
               href="mailto:roziyabegimtuxtayeva@gmail.com"
               target="_blank"
