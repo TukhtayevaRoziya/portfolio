@@ -29,7 +29,7 @@ const Project = () => {
       id: 0,
       image: nura,
       title: `Nura Elite `,
-      technologies: `Css3, React, Yandex Map`,
+      technologies: `Css3, React, Yandex Map, NodeJs, Express, Mongodb`,
       time: 1,
       link: 'https://nuraelite.netlify.app/',
     },
