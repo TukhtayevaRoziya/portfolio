@@ -76,10 +76,9 @@ const Resume = () => {
           <h3 className={style.title1}>{t('mySkill')}</h3>
           <h3 className={style.title + ' resumeTitle'}>Front-End</h3>
           <p className={style.text + ' resumeText'}>
-            HTML, CSS (SASS/SCSS/MODULE), JavaScript, JQuery, Bootstrap, Ajax,
-            Json, ReactJs, Redux, Redux-thunk, ChartJs, React-router, Ant
-            design, Material UI, AOS, Chakra UI, React Bootstrap, Typescript,
-            Redux form
+            HTML, CSS (SASS/SCSS/MODULE), JavaScript, JQuery, Bootstrap,
+            ReactJs, Redux, Vite, AntD, Material UI, React Bootstrap, Typescript,
+            NextJS, i18next
           </p>
         </div>
         <div className={style.block}>
@@ -107,9 +106,9 @@ const Resume = () => {
               <FaTelegramPlane />
               @TukhtayevaRoziya
             </a>
-            {/* <a href="tel:+998905280770">
+            <a href="tel:+998905280770">
               <FaPhoneAlt /> +998 905280770
-            </a> */}
+            </a>
             <a
               href="mailto:roziyabegimtuxtayeva@gmail.com"
               target="_blank"

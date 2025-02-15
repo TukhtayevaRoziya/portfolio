@@ -208,6 +208,8 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 .dark .project__block__box h5 {
   color: rgb(220, 220, 220);
 }
+
+.dark .Project_project__block__box__as_btn__CGK01,
 .dark .Project_project__block__box__as_btn__7\+IaM,
 .dark .Project_project__block__box__as_btn__TLT5v  {
   background: #01374b;
@@ -221,6 +223,11 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 }
 .dark .mainPicture {
   filter: inherit;
+}
+.dark .Project_project__block__box__wDpKL:hover p,
+.dark .Project_project__block__box__wDpKL h5,
+.dark .Project_project__block__box__wDpKL p{
+  color: white;
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {

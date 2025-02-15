@@ -19,7 +19,7 @@ const Skills = () => {
                 {t('universe')}
               </p>
               <div className="experience">
-                <div className="num">1 </div>
+                <div className="num">3 </div>
                 <div className="exp">
                   {t("year")} <br />  {t("experience")}
                 </div>

@@ -27,6 +27,8 @@
 
 .text {
   color: #00000090;
+  line-height: 23px;
+
 }
 
 .about_me h3 {
@@ -182,7 +184,7 @@
 
   .text {
     margin-top: 10px;
-    color: rgb(0 0 0 / 50%);
+    color: rgb(0 0 0 / 70%);
     line-height: 28px;
   }
 
