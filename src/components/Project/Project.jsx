@@ -17,6 +17,7 @@ import las from '../../assets/projects/las.webp'
 import nura from '../../assets/projects/nuraElite.webp'
 import cyber_sport from '../../assets/projects/cyber_sport.png'
 import and_sport from '../../assets/projects/andijan_sport.png'
+import bemorUz from '../../assets/projects/image.png'
 
 import 'antd/dist/antd.css'
 import style from './Project.module.css'
@@ -25,6 +26,14 @@ const Project = () => {
   const { t } = useTranslation()
 
   const data = [
+    {
+      id: 23,
+      image: bemorUz,
+      title: `Bemor Uz `,
+      technologies: ` React, Typescript`,
+      time: 4,
+      link: 'https://bemoruz.netlify.app/en',
+    },
     {
       id: 0,
       image: nura,
