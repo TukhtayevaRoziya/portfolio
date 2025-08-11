@@ -25,9 +25,17 @@
   "experience": "опыта",
   "day": "Дни",
   "active":"Активный",
-  "week": "week"
+  "week": "week",
 
 
 
-
+  "contactTitle": "Есть проект в",
+  "contactTitle2": "уму?",
+  "contactEmail": "Ваш Email",
+  "contactMessage": "Ваше сообщение",
+  "contactBtn": "Отправить",
+  "contactName": "Ваше имя",
+  "contactEmailPlaceholder": "Введите ваш email!",
+  "contactNamePlaceholder": "Введите ваше имя!",
+  "contactMessagePlaceholder": "Введите ваше сообщение!"
 }

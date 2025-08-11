@@ -19,7 +19,7 @@ const Footer2: React.FC = () => {
     { icon: <AssignmentInd />, value: "resume" },
     { icon: <InsertDriveFileRounded />, value: "project" },
     { icon: <LocalOfferRounded />, value: "skills" },
-    { icon: <ChatIcon />, value: "chat" },
+    { icon: <ChatIcon />, value: "contact" },
   ];
 
   const pathMap = items.map((_, i) =>

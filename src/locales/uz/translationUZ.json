@@ -24,8 +24,16 @@
   "experience": "tajriba",
   "day": "kun",
   "active":"Faol",
-  "week": "hafta"
+  "week": "hafta",
 
-
+ "contactTitle": "Biror loyiha",
+  "contactTitle2": "o‘ylayapsizmi?",
+  "contactEmail": "Sizning Email",
+  "contactMessage": "Sizning Xabaringiz",
+  "contactBtn": "Xabar yuborish",
+  "contactName": "Sizning Ismingiz",
+  "contactEmailPlaceholder": "Emailingizni kiriting!",
+  "contactNamePlaceholder": "Ismingizni kiriting!",
+  "contactMessagePlaceholder": "Xabaringizni kiriting!"
 
 }

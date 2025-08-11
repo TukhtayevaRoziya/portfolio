@@ -25,5 +25,15 @@
   "experience": "experience",
   "day": "days",
   "active":"Active",
-  "week": "week"
+  "week": "week",
+
+  "contactTitle": "Got a project in",
+  "contactTitle2": "mind?",
+  "contactEmail": "Your Email",
+  "contactMessage": "Your Message",
+  "contactBtn": "Send Message",
+  "contactName": "Your Name",
+  "contactEmailPlaceholder": "Enter your email!",
+  "contactNamePlaceholder": "Enter your name!",
+  "contactMessagePlaceholder": "Enter your message!"
 }

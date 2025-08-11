@@ -20,10 +20,9 @@ function Language() {
     <div className="TopHeader">
       <div className="select">
         <select name="lang" value={lang} onChange={handleChange}>
-          <option value="en">En</option>
-        </select>
-        <select name="lang" value={lang ?? "uz"} onChange={handleChange}>
           <option value="uz">Uz</option>
+          <option value="en">En</option>
+          <option value="ru">Ru</option>
         </select>
       </div>
     </div>

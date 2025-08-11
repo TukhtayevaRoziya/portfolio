@@ -12,6 +12,7 @@ const Header = lazy(() => import('./components/header/Header'))
 const Resume = lazy(() => import('./components/resume/Resume'))
 const Skills = lazy(() => import('./components/skills/Skills'))
 const Project = lazy(() => import('./components/project/Project'))
+const Contact = lazy(() => import('./components/contact/Contact'))
 
 const App = () => {
   return (
@@ -53,6 +54,14 @@ const App = () => {
               element={
                 <Suspense fallback={<Preloader />}>
                   <Project />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <Suspense fallback={<Preloader />}>
+                  <Contact />
                 </Suspense>
               }
             />
