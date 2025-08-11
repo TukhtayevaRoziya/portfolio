@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "portfolio",
   "version": "0.3.0",
   "homepage": "https://tukhtayevaroziya.github.io/portfolio",
   "private": true,
@@ -16,7 +16,7 @@
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "antd": "^4.20.2",
-    "axios": "^0.26.1",
+    "axios": "^1.11.0",
     "i18next": "^21.8.2",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.0",
@@ -58,7 +58,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
+    "cross-env": "^10.0.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.9.2",
     "vite": "^6.3.5"
   }

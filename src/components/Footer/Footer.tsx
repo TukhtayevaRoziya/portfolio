@@ -18,7 +18,7 @@ const Footer2: React.FC = () => {
     { icon: <HomeRounded />, value: "home" },
     { icon: <AssignmentInd />, value: "resume" },
     { icon: <InsertDriveFileRounded />, value: "project" },
-    { icon: <LocalOfferRounded />, value: "service" },
+    { icon: <LocalOfferRounded />, value: "skills" },
     { icon: <ChatIcon />, value: "chat" },
   ];
 
