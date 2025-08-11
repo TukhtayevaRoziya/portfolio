@@ -1,5 +1,5 @@
 
-import { headerAPI } from './../api/headerApi';
+import { headerAPI } from '../api/headerApi';
 const SET_HEADER = '/contact/SET_CONTACT_IMAGES';
 
 let initialState = {
@@ -7,7 +7,7 @@ let initialState = {
 };
 
 
-export const headerReducer = (state = initialState, action) => {
+export const headerReducer = (state = initialState, action: { type: any; headerData: any; }) => {
     switch (action.type) {
         case SET_HEADER:
             return {
@@ -19,11 +19,11 @@ export const headerReducer = (state = initialState, action) => {
     }
 }
 
-export const setHeaderData = (headerData) => ({ type: SET_HEADER, headerData });
+export const setHeaderData = (headerData: any) => ({ type: SET_HEADER, headerData });
 
-export const getHeaderData = () => (dispatch) => {
+export const getHeaderData = () => (dispatch: (arg0: { type: string; headerData: any; }) => void) => {
     return headerAPI.setHeader()
-        .then(res => {
+        .then((res: any) => {
             dispatch(setHeaderData(res));
         });
 }

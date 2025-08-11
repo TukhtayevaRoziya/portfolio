@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function TypingEffect(props) {
+export default function TypingEffect(props: { text: string; }) {
   const [typing, setTyping] = useState("");
   const [index, setIndex] = useState(0);
   

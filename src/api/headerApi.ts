@@ -3,7 +3,7 @@ import { instance } from './api'
 export const headerAPI = {
     setHeader() {
         return instance.get(`header/`)
-            .then(async(response) => {
+            .then(async(response: { data: any; }) => {
                 return await response.data;
             });
     },

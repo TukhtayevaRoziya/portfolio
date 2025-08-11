@@ -13,7 +13,6 @@ import aliExpress from '../../assets/projects/aliExpress.webp'
 import build from '../../assets/projects/build.webp'
 import buildAdmin from '../../assets/projects/buildAdmin.webp'
 import doctor from '../../assets/projects/doctor.webp'
-import las from '../../assets/projects/las.webp'
 import nura from '../../assets/projects/nuraElite.webp'
 import cyber_sport from '../../assets/projects/cyber_sport.png'
 import and_sport from '../../assets/projects/andijan_sport.png'
@@ -68,14 +67,14 @@ const Project = () => {
       link: 'https://robiyaxon.github.io/programmer-girls-React/',
     },
     {
-      id: 5,
-      image: las,
-      title: `LAS`,
-      technologies: ` Css, React, React-Router, NextJs, Ant Design`,
-      time: 5,
-      link: 'https://papaya-puffpuff-1aa409.netlify.app/',
-    },
-    {
+    // {
+    //   id: 5,
+    //   image: las,
+    //   title: `LAS`,
+    //   technologies: ` Css, React, React-Router, NextJs, Ant Design`,
+    //   time: 5,
+    //   link: 'https://papaya-puffpuff-1aa409.netlify.app/',
+    // },
       id: 6,
       image: doctor,
       title: `Doctor`,

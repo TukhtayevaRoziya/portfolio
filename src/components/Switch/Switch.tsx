@@ -16,7 +16,9 @@ const Switch = () => {
 
   function getInitialMode() {
     const isReturningUser = "dark" in localStorage;
-    const savedMode = JSON.parse(localStorage.getItem("dark"));
+    const savedModeRaw = localStorage.getItem("dark");
+    const savedMode = savedModeRaw ? JSON.parse(savedModeRaw) : false;
+
     const userPrefersDark = getPrefColorScheme();
 
     if (isReturningUser) {
@@ -45,7 +47,7 @@ const Switch = () => {
           <span className="toggle">
             <input
               checked={darkMode}
-              onChange={() => setDarkMode(prevMode => !prevMode)}
+              onChange={() => setDarkMode((prevMode: any) => !prevMode)}
               id="checkbox"
               className="checkbox"
               type="checkbox"

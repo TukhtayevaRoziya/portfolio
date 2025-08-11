@@ -1,17 +1,17 @@
 import React, { lazy, Suspense } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 
-import Footer from './components/Footer/Footer'
-import Switch from './components/Switch/Switch'
-import Language from './components/Language/Language'
+import Footer from './components/footer/Footer'
+import Switch from './components/switch/Switch'
+import Language from './components/language/Language'
 import { Preloader } from './components/preloader/Preloader'
 
 import './App.css'
 
-const Header = lazy(() => import('./components/Header/Header'))
-const Resume = lazy(() => import('./components/Resume/Resume'))
-const Skills = lazy(() => import('./components/Skills/Skills'))
-const Project = lazy(() => import('./components/Project/Project'))
+const Header = lazy(() => import('./components/header/Header'))
+const Resume = lazy(() => import('./components/resume/Resume'))
+const Skills = lazy(() => import('./components/skills/Skills'))
+const Project = lazy(() => import('./components/project/Project'))
 
 const App = () => {
   return (

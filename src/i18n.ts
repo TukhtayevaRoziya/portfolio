@@ -24,7 +24,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: localStorage.getItem("lang"),
+    lng: localStorage.getItem("lang") || "uz",
     fallbackLng: "uz",
     debug: false,
     react: {
