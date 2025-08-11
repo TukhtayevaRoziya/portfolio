@@ -1,62 +1,49 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import InsertDriveFileRounded from "@mui/icons-material/InsertDriveFileRounded";
 
+import InsertDriveFileRounded from "@mui/icons-material/InsertDriveFileRounded";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import LocalOfferRounded from "@mui/icons-material/LocalOfferRounded";
 import AssignmentInd from "@mui/icons-material/AssignmentInd";
 import HomeRounded from "@mui/icons-material/HomeRounded";
+import ChatIcon from "@mui/icons-material/Chat";
 
 import style from "./Footer.module.css";
 
-export default class Footer2 extends Component {
-  state = {
-    value: 0,
-    pathMap: ["/", "/resume", "/project", "/skills"],
-  };
+const Footer2: React.FC = () => {
+  const [value, setValue] = useState(0);
 
-  handleChange = (event: any, value: any) => {
-    this.setState({ value });
-  };
-  render() {
-    const { value, pathMap } = this.state;
-    return (
-      <BottomNavigation
-        value={value}
-        onChange={this.handleChange}
-        className={"nav primary " + style.Footer}
-      >
-        <BottomNavigationAction
-          icon={<HomeRounded />}
-          value="home"
-          component={NavLink}
-          to={pathMap[0]}
-          aria-label="project"
-        />
-        <BottomNavigationAction
-          icon={<AssignmentInd />}
-          value="resume"
-          component={NavLink}
-          to={pathMap[1]}
-          aria-label="project"
-        />
-        <BottomNavigationAction
-          icon={<InsertDriveFileRounded />}
-          value="project"
-          component={NavLink}
-          to={pathMap[2]}
-          aria-label="project"
-        />
+  const items = [
+    { icon: <HomeRounded />, value: "home" },
+    { icon: <AssignmentInd />, value: "resume" },
+    { icon: <InsertDriveFileRounded />, value: "project" },
+    { icon: <LocalOfferRounded />, value: "service" },
+    { icon: <ChatIcon />, value: "chat" },
+  ];
 
+  const pathMap = items.map((_, i) =>
+    i === 0 ? "/" : `/${items[i].value}`
+  );
+
+  return (
+    <BottomNavigation
+      value={value}
+      onChange={(event, newValue) => setValue(newValue)}
+      className={"nav primary " + style.Footer}
+    >
+      {items.map((item, i) => (
         <BottomNavigationAction
-          icon={<LocalOfferRounded />}
-          value="service"
+          key={i}
+          icon={item.icon}
+          value={item.value}
           component={NavLink}
-          to={pathMap[3]}
-          aria-label="project"
+          to={pathMap[i]}
+          aria-label={item.value}
         />
-      </BottomNavigation>
-    );
-  }
-}
+      ))}
+    </BottomNavigation>
+  );
+};
+
+export default Footer2;
