@@ -1,39 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 import pic from "../../assets/contact.png";
 
 import style from "./Contact.module.css";
-import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-      const { t } = useTranslation()
-    
+  const { t } = useTranslation();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const dataToSend = {
+      name,
+      email,
+      message
+    }
+
+    try{
+      const response = await axios.post("https://portfolio-api-two-rosy.vercel.app/api/contact", dataToSend);
+      alert(response.data)
+    }catch(error){
+      console.error(error);
+    }
+  };
+
   return (
     <div className={style.Contact}>
       <div className={style.ContactContent}>
         <h1>
-           {t('contactTitle')} <br /> <span> {t('contactTitle2')} </span>
+          {t("contactTitle")} <br /> <span> {t("contactTitle2")} </span>
         </h1>
         <img src={pic} alt="" />
       </div>
-      <div className={style.ContactForm}>
-        <div>
-          <label htmlFor="name">{t('contactName')}</label>
-          <input type="text" id="name" placeholder={t('contactNamePlaceholder')} />
-        </div>
-        <div>
-          <label htmlFor="email" >{t('contactEmail')}</label>
-          <input type="email" id="email" placeholder={t('contactEmailPlaceholder')}/>
-        </div>
-        <div>
-        <label htmlFor="message">{t('contactMessage')}</label>
-        <textarea id="message" placeholder={t('contactMessagePlaceholder')}></textarea>
-      </div>
-       <div className={style.ContactBtn}>
-        <button type="submit">{t('contactBtn')}</button>
-      </div>
-      </div>
-     
+      <form onSubmit={handleSubmit} className={style.ContactForm}>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder={t("contactNamePlaceholder")}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder={t("contactEmailPlaceholder")}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <textarea
+            id="message"
+            required
+            placeholder={t("contactMessagePlaceholder")}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+          <button type="submit">{t("contactBtn")}</button>
+      </form>
     </div>
   );
 };
