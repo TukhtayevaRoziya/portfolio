@@ -18,20 +18,21 @@ const Contact = () => {
     const dataToSend = {
       name,
       email,
-      message
-    }
+      message,
+    };
 
-    try{
-      await axios.post("https://portfolio-api-two-rosy.vercel.app/api/contact", dataToSend);
-       alert("Iltimos! Emailingizni tekshiring!");
+    try {
+      await axios.post(
+        "https://portfolio-api-two-rosy.vercel.app/api/contact",
+        dataToSend
+      );
+      alert("Iltimos! Emailingizni tekshiring!");
       setName("");
       setEmail("");
       setMessage("");
-      
-    }catch(error){
+    } catch (error) {
       console.error(error);
     }
-   
   };
 
   return (
@@ -43,30 +44,30 @@ const Contact = () => {
         <img src={pic} alt="" />
       </div>
       <form onSubmit={handleSubmit} className={style.ContactForm}>
-          <input
-            type="text"
-            id="name"
-            required
-            placeholder={t("contactNamePlaceholder")}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="email"
-            id="email"
-            required
-            placeholder={t("contactEmailPlaceholder")}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <textarea
-            id="message"
-            required
-            placeholder={t("contactMessagePlaceholder")}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <button type="submit">{t("contactBtn")}</button>
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder={t("contactNamePlaceholder")}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder={t("contactEmailPlaceholder")}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <textarea
+          id="message"
+          required
+          placeholder={t("contactMessagePlaceholder")}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        ></textarea>
+        <button type="submit">{t("contactBtn")}</button>
       </form>
     </div>
   );
