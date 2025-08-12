@@ -22,11 +22,16 @@ const Contact = () => {
     }
 
     try{
-      const response = await axios.post("https://portfolio-api-two-rosy.vercel.app/api/contact", dataToSend);
-      alert(response.data)
+      await axios.post("https://portfolio-api-two-rosy.vercel.app/api/contact", dataToSend);
+       alert("Iltimos! Emailingizni tekshiring!");
+      setName("");
+      setEmail("");
+      setMessage("");
+      
     }catch(error){
       console.error(error);
     }
+   
   };
 
   return (
