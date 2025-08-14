@@ -203,12 +203,15 @@ a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
 .dark .typewriter p {
   color: #fff !important;
 }
+
+.dark p,
+.dark h5,
 .dark .project__block__box p,
 .dark .project__block__box:hover p,
 .dark .project__block__box h5 {
-  color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220) !important;
 }
-
+.dark .Project_project__block__box__as_btn__gkSZx,
 .dark .Project_project__block__box__as_btn__CGK01,
 .dark .Project_project__block__box__as_btn__7\+IaM,
 .dark .Project_project__block__box__as_btn__TLT5v  {

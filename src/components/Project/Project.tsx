@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import oksyG from '../../assets/projects/oksyG.webp'
 import hotel from '../../assets/projects/hotel.webp'
 import charismo from '../../assets/projects/charisma.webp'
+import las from '../../assets/projects/las.webp'
 import hydroAdmin from '../../assets/projects/hydroAdmin.webp'
 import MService from '../../assets/projects/MService.webp'
 import youthCenter from '../../assets/projects/YouthCenter.webp'
@@ -37,7 +38,7 @@ const Project = () => {
       id: 0,
       image: nura,
       title: `Nura Elite `,
-      technologies: `Css3, React, Yandex Map, NodeJs, Express, Mongodb`,
+      technologies: `React, Yandex Map, NodeJs, Express, Mongodb`,
       time: 1,
       link: 'https://nuraelite.netlify.app/',
     },
@@ -45,7 +46,7 @@ const Project = () => {
       id: 12,
       image: cyber_sport,
       title: `Cyber Sport`,
-      technologies: ` Css3, React, Ant design`,
+      technologies: `React, Ant design`,
       time: 1,
       link: 'https://cyber-sport.netlify.app/',
     },
@@ -53,7 +54,7 @@ const Project = () => {
       id: 13,
       image: and_sport,
       title: `Andijan Sport`,
-      technologies: ` Css3, React, Ant design, React-router-dom, `,
+      technologies: `React, Ant design, React-router-dom, `,
       time: 3,
       link: 'https://andijan-football.netlify.app/',
     },
@@ -61,24 +62,24 @@ const Project = () => {
       id: 4,
       image: aliExpress,
       title: `AliExpress Clone`,
-      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      technologies: `React, Redux, React-Redux, React-Router,
       Redux-form, Material Ui, Ant Design`,
       time: 5,
       link: 'https://robiyaxon.github.io/programmer-girls-React/',
     },
     {
-    // {
-    //   id: 5,
-    //   image: las,
-    //   title: `LAS`,
-    //   technologies: ` Css, React, React-Router, NextJs, Ant Design`,
-    //   time: 5,
-    //   link: 'https://papaya-puffpuff-1aa409.netlify.app/',
-    // },
+      id: 5,
+      image: las,
+      title: `LAS`,
+      technologies: `React, React-Router, NextJs, Ant Design`,
+      time: 5,
+      link: 'https://papaya-puffpuff-1aa409.netlify.app/',
+    },
+    {
       id: 6,
       image: doctor,
       title: `Doctor`,
-      technologies: ` Css, React, Redux, React-Redux, React-Router, Ant
+      technologies: `React, Redux, React-Redux, React-Router, Ant
       design`,
       time: ' 1,5',
       link: 'https://diplomishi.netlify.app/',
@@ -87,7 +88,7 @@ const Project = () => {
       id: 7,
       image: charismo,
       title: `Charismo`,
-      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      technologies: `React, Redux, React-Redux, React-Router,
       Redux-form, TypeScript, Aos, Ant design, Material Ui`,
       time: ' 5',
       link: 'https://tukhtayevaroziya.github.io/charismo/',
@@ -104,7 +105,7 @@ const Project = () => {
       id: 2,
       image: hotel,
       title: `Hotel`,
-      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      technologies: `React, Redux, React-Redux, React-Router,
       Redux-form`,
       time: 14,
       link: 'https://tukhtayevaroziya.github.io/hotel-project-/',
@@ -122,7 +123,7 @@ const Project = () => {
       id: 8,
       image: MService,
       title: `Mers Shop`,
-      technologies: `  Css, React, Redux, React-Router,
+      technologies: `React, Redux, React-Router,
       React-query, Swiper, axios, react-i18next,
       Prop-types, Redux-thunk`,
       time: ' 5',
@@ -133,7 +134,7 @@ const Project = () => {
       id: 9,
       image: build,
       title: `Build`,
-      technologies: `  Css, React, React-Redux,
+      technologies: `React, React-Redux,
       React-Router, Ant design,
       react-yandex-maps, react-i18next, react-bootstrap`,
       time: ' 7',
@@ -144,7 +145,7 @@ const Project = () => {
       id: 10,
       image: hydroAdmin,
       title: `Hydro Admin`,
-      technologies: `  Css, React, Redux, React-Redux,
+      technologies: `React, Redux, React-Redux,
       React-Router, Redux-form, Reactsrap, styled-component, react-i18next`,
       time: ' 7',
       condition: `(${t('real') + ' ' + t('project')})`,
@@ -154,7 +155,7 @@ const Project = () => {
       id: 11,
       image: buildAdmin,
       title: `Build Admin`,
-      technologies: ` Css, React, Redux, React-Redux, React-Router,
+      technologies: `React, Redux, React-Redux, React-Router,
       Redux-thunk, Ant design, axios, node-sass`,
       time: ' 7',
       condition: `(${t('real') + ' ' + t('project')})`,
@@ -168,12 +169,16 @@ const Project = () => {
       <h3>
         {d.title} {t('project')} {d.condition}
       </h3>
+      <div>
+
       <p>{t('technology') + d.technologies}</p>
       {!d.close ? (
         <h5>{t('time') + d.time + ' ' + t('day')}</h5>
       ) : (
         <h5>Teamwork</h5>
       )}
+      </div>
+
       <div className={style.project__block__box__as_btn}>
         {!d.close ? (
           <a href={d.link} target="_blank" rel="noopener noreferrer">
