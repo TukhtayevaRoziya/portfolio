@@ -6,7 +6,7 @@ import { projectData } from "../../redux";
 
 import style from "./Project.module.css";
 import "antd/dist/antd.css";
-
+ 
 const Project = () => {
   const { t } = useTranslation();
 
