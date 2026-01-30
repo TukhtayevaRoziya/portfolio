@@ -1,15 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { BottomNavigationAction } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import { FooterNavItemProps } from "../../utilities/types";
 
-interface FooterNavItemProps {
-  icon: React.ReactNode;
-  index: number;
-  pathMap: string[];
-  label: string;
-}
 
-const FooterNavItem: React.FC<FooterNavItemProps> = ({ icon, index, pathMap, label }) => {
+
+const FooterNavItem: FC<FooterNavItemProps> = ({ icon, index, pathMap, label }) => {
   return (
     <BottomNavigationAction
       icon={icon}

@@ -24,7 +24,7 @@ const Contact = () => {
     try {
       await axios.post(
         "https://portfolio-api-two-rosy.vercel.app/api/contact",
-        dataToSend
+        dataToSend,
       );
       alert("Iltimos! Emailingizni tekshiring!");
       setName("");

@@ -23,14 +23,11 @@ const Switch = () => {
 
     if (isReturningUser) {
       return savedMode;
-      // if preferred color scheme is dark --> dark
     } else if (userPrefersDark) {
       return true;
-      // otherwise --> light
     } else {
       return false;
     }
-    // return savedMode || false;
   }
 
   function getPrefColorScheme() {
@@ -56,9 +53,7 @@ const Switch = () => {
             <label htmlFor="checkbox" />
           </span>
           <span style={{ color: darkMode ? "slateblue" : "grey" }}>☾</span>
-          {/* <button onClick={() => setDarkMode(prevMode => !prevMode)}>
-          Toggle
-        </button> */}
+         
         </div>
       </nav>
     </div>
