@@ -12,3 +12,7 @@
 body{
   overflow-x: hidden;
 }
+
+.dark h3{
+color: white !important;
+}

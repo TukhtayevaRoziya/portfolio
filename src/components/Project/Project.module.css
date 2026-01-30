@@ -25,6 +25,9 @@
   background: #eaebed19;
   border-radius: 10px;
   transition: 0.3s all linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project__block__box:hover {
@@ -40,7 +43,7 @@
 
 .project__block__box h3 {
   margin-top: 10px;
-  color: #fff;
+  color: #000;
   font-weight: bolder;
   margin-left: 10px;
   font-size: 18px;
