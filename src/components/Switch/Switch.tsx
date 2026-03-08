@@ -8,10 +8,10 @@ const Switch = () => {
     localStorage.setItem("dark", JSON.stringify(darkMode));
   }, [darkMode]);
 
-  if (darkMode){
-    document.body.className = 'dark';
-  }else{
-    document.body.classList.remove('dark');
+  if (darkMode) {
+    document.body.className = "dark";
+  } else {
+    document.body.classList.remove("dark");
   }
 
   function getInitialMode() {
@@ -32,32 +32,28 @@ const Switch = () => {
 
   function getPrefColorScheme() {
     if (!window.matchMedia) return;
-
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
 
   return (
-    <div className={darkMode ? "dark-mode" : "light-mode"}>
-      <nav>
-        <div className="toggle-container">
-          <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
-          <span className="toggle">
-            <input
-              checked={darkMode}
-              onChange={() => setDarkMode((prevMode: any) => !prevMode)}
-              id="checkbox"
-              className="checkbox"
-              type="checkbox"
-              aria-label="Check"
-            />
-            <label htmlFor="checkbox" />
-          </span>
-          <span style={{ color: darkMode ? "slateblue" : "grey" }}>☾</span>
-         
-        </div>
-      </nav>
-    </div>
+    <nav
+      className={" toggle-container" + darkMode ? "dark-mode" : "light-mode"}
+    >
+      <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
+      <span className="toggle">
+        <input
+          checked={darkMode}
+          onChange={() => setDarkMode((prevMode: any) => !prevMode)}
+          id="checkbox"
+          className="checkbox"
+          type="checkbox"
+          aria-label="Check"
+        />
+        <label htmlFor="checkbox" />
+      </span>
+      <span style={{ color: darkMode ? "slateblue" : "grey" }}>☾</span>
+    </nav>
   );
-}
+};
 
-export default Switch
+export default Switch;

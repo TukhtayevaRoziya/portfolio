@@ -1,9 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-  FaTelegramPlane,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaTelegramPlane, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 import coder from "../../assets/girl_coder.webp";
 
@@ -26,21 +22,40 @@ const Resume = () => {
     </li>
   ));
 
-  return (
-    <div className={style.Resume}>
-      <img className={style.picture} src={coder} alt="" draggable={false} />
-      <div className={style.block + " " + style.about_me}>
-        <h3 className={style.title + " resumeTitle"}>{t("aboutMe")}</h3>
-        <p className={style.text + " resumeText"}>
+  const resume = [
+    {
+      id:1,
+      class: style.about_me,
+      title: t("aboutMe"),
+      txt: (
+        <>
           {t("aboutMeText1")}
           <br />
           {t("aboutMeText2")}
-        </p>
-      </div>
-      <div className={style.block + " " + style.extra}>
-        <h3 className={style.title + " resumeTitle"}>{t("esucation")}</h3>
-        <p className={style.text + " resumeText"}>{t("educationText")}</p>
-      </div>
+        </>
+      ),
+    },
+    {
+      id:2,
+      class: style.extra,
+      title: t("esucation"),
+      txt: t("educationText")
+         
+      ,
+    },
+  ];
+
+  const resumeMap = resume.map((r) => (
+    <div key={r.id} className={style.block + " " + r.class}>
+      <h3 className={style.title + " resumeTitle"}>{r.title}</h3>
+      <p className={style.text + " resumeText"}>{r.txt}</p>
+    </div>
+  ));
+
+  return (
+    <div className={style.Resume}>
+      <img className={style.picture} src={coder} alt="" draggable={false} />
+      {resumeMap}
       <div className={style.My_skills}>
         <div className={style.block}>
           <h3 className={style.title1}>{t("mySkill")}</h3>

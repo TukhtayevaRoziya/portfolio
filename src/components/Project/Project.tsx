@@ -13,18 +13,13 @@ const Project = () => {
   const dataMap = projectData.map((d) => (
     <div className={style.project__block__box} key={d.id}>
       <Image src={d.image} />
-
       <div className={style.block_txt}>
         <h3>
           {d.title} {t("project")}
         </h3>
         <div>
           <p>{t("technology") + d.technologies}</p>
-          {!d.close ? (
-            <h5>{t("time") + d.time + " " + t("day")}</h5>
-          ) : (
-            <h5>Teamwork</h5>
-          )}
+          <h5>{!d.close ? t("time") + d.time + " " + t("day") : "Teamwork"}</h5>
         </div>
 
         <div className={style.project__block__box__as_btn}>

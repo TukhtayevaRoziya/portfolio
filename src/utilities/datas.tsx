@@ -229,3 +229,5 @@ export const skillsData = [
   { id: 12, skill: "Figma", percentage: 90 },
   { id: 13, skill: "i18Next", percentage: 95 },
 ];
+
+

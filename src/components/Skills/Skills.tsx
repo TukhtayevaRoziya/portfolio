@@ -24,27 +24,21 @@ const Skills = () => {
   ));
 
   return (
-    <div>
-      <section className="skills" id="skills">
-        <div className="content">
-          <div className="title">
-            <span>{t("mySkills")}</span>
-          </div>
-          <div className="skills-details">
-            <div className="text">
-              <div className="topic">{t("knowledge")}</div>
-              <p>{t("universe")}</p>
-              <div className="experience">
-                <div className="num">3 </div>
-                <div className="exp">
-                  {t("year")} <br /> {t("experience")}
-                </div>
-              </div>
+    <div className="skills content">
+      <span className="title">{t("mySkills")}</span>
+      <div className="skills-details">
+        <div className="text">
+          <div className="topic">{t("knowledge")}</div>
+          <p>{t("universe")}</p>
+          <div className="experience">
+            <div className="num">3 </div>
+            <div className="exp">
+              {t("year")} <br /> {t("experience")}
             </div>
-            <div className="boxes">{skillsDataMap}</div>
           </div>
         </div>
-      </section>
+        <div className="boxes">{skillsDataMap}</div>
+      </div>
     </div>
   );
 };

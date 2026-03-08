@@ -19,6 +19,7 @@ function Language() {
   return (
     <div className="TopHeader">
       <div className="select">
+        <label htmlFor="lang"></label>
         <select name="lang" value={lang} onChange={handleChange}>
           <option value="uz">Uz</option>
           <option value="en">En</option>
