@@ -58,6 +58,8 @@
     ]
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
     "cross-env": "^10.0.0",
     "gh-pages": "^6.3.0",
     "typescript": "^5.9.2",
