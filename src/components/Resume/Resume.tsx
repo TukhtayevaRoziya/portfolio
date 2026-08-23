@@ -4,7 +4,7 @@ import { FaTelegramPlane, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import coder from "../../assets/girl_coder.webp";
 
 import style from "./Resume.module.css";
-import { resumeData } from "../../utilities/datas";
+import { resumeData } from "../../utils/datas";
 
 const Resume = () => {
   const { t } = useTranslation();

@@ -7,7 +7,7 @@ import Language from "./components/language/Language";
 import { Preloader } from "./components/preloader/Preloader";
 
 import "./App.css";
-import { routeData } from "./utilities/datas";
+import { routeData } from "./utils/datas";
 
 const App = () => {
   const routeDataMap = routeData.map((r) => (

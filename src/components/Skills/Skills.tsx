@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import { useTranslation } from "react-i18next";
-import { skillsData } from "../../utilities/datas";
+import { skillsData } from "../../utils/datas";
 
 const Skills = () => {
   const { t } = useTranslation();

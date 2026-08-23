@@ -5,7 +5,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import BottomNavigation from "@mui/material/BottomNavigation";
 
 import style from "./Footer.module.css";
-import { footerItems } from "../../utilities/datas";
+import { footerItems } from "../../utils/datas";
 
 const Footer2: React.FC = () => {
   const [value, setValue] = useState(0);

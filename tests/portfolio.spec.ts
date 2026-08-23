@@ -1,6 +1,6 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 import { test, expect } from "@playwright/test";
-import { LANG, socialMedia } from "./Overall";
+import { LANG, socialMedia } from "./helpers";
 
 test.beforeEach("Page goto link", async ({ page }) => {
   await page.goto("http://localhost:3000/portfolio#/");
@@ -38,7 +38,7 @@ test("Verify selected theme persists after page refresh", async ({ page }) => {
   await expect(page.locator("body")).toHaveClass("dark");
 });
 
-test("Social media linki yangi tabda to'g'ri ochilishi kerak", async ({
+test("Verify social media links (GitHub, LinkedIn, Telegram) open in a new tab", async ({
   page,
 }) => {
   await page.goto("http://localhost:3000/portfolio#/resume");
@@ -96,7 +96,7 @@ test("Verify validation error for invalid email format", async ({ page }) => {
   expect(validationMessage1).not.toContain("@");
 });
 
-test("CONT-04: Message maydoniga matn va emojilar yozilishi", async ({
+test("Verify character limit and special character support in message field", async ({
   page,
 }) => {
   await page.goto("http://localhost:3000/portfolio#/contact");
@@ -123,4 +123,18 @@ test("images to be downloaded", async ({ page }) => {
     });
     expect(isLoaded).toBeTruthy();
   }
+});
+
+test("Verify initial page load respects system default preference", async ({
+  page,
+}) => {
+  await page.emulateMedia({ colorScheme: "dark" });
+
+  const body = page.locator("body");
+
+  const bgColor = await body.evaluate((el) => {
+    return window.getComputedStyle(el).backgroundColor;
+  });
+
+  expect(bgColor).not.toBe("rgb(255, 255, 255)");
 });

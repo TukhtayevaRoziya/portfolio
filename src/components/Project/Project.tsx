@@ -2,7 +2,7 @@ import { Image } from "antd";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import { projectData } from "../../utilities/datas";
+import { projectData } from "../../utils/datas";
 
 import style from "./Project.module.css";
 import "antd/dist/antd.css";
