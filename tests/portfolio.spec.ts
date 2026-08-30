@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 import { LANG, socialMedia } from "./helpers";
 
 test.beforeEach("Page goto link", async ({ page }) => {
-  await page.goto("http://localhost:3000/portfolio#/");
+  await page.goto("/portfolio#/");
 });
 
 test("All UI elements update to selected language without missing translations", async ({
@@ -41,7 +41,7 @@ test("Verify selected theme persists after page refresh", async ({ page }) => {
 test("Verify social media links (GitHub, LinkedIn, Telegram) open in a new tab", async ({
   page,
 }) => {
-  await page.goto("http://localhost:3000/portfolio#/resume");
+  await page.goto("portfolio#/resume");
   let smLink = new socialMedia(page);
   await smLink.newTab("https://t.me/TukhtayevaRoziya");
   await smLink.newTab(
@@ -109,7 +109,7 @@ test("Verify character limit and special character support in message field", as
   await expect(textarea).toHaveValue(testText);
 });
 
-test("images to be downloaded", async ({ page }) => {
+test("Verify project images are loaded successfully", async ({ page }) => {
   await page.goto("http://localhost:3000/portfolio#/project");
   const images = page.locator(".ant-image-img");
 

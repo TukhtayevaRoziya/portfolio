@@ -39,9 +39,6 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
     timeout: 120 * 1000, // CI uchun server yuklanishiga 2 daqiqa vaqt beriladi
   },
-  use: {
-    baseURL: 'http://localhost:3000',
-  },
   /* Configure projects for major browsers */
   projects: [
     {
@@ -81,10 +78,10 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: {
-    command: 'npm start',
-    url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
-    timeout: 120 * 1000,
-  },
+  // webServer: {
+  //   command: 'npm start',
+  //   url: 'http://localhost:3000',
+  //   reuseExistingServer: !process.env.CI,
+  //   timeout: 120 * 1000,
+  // },
 });

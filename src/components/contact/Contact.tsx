@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 import pic from "../../assets/contact.png";
-
 import style from "./Contact.module.css";
 
 const Contact = () => {
@@ -23,19 +24,28 @@ const Contact = () => {
     try {
       await axios.post(
         "https://portfolio-api-two-rosy.vercel.app/api/contact",
-        dataToSend,
+        dataToSend
       );
-      alert("Iltimos! Emailingizni tekshiring!");
+      
+      // Alert o'rniga muvaffaqiyatli notification
+      toast.success("Iltimos! Emailingizni tekshiring!");
+
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
       console.error(error);
+      
+      // Xatolik yuz berganda chiqadigan notification
+      toast.error("Xatolik yuz berdi. Qaytadan urinib ko'ring!");
     }
   };
 
   return (
     <div className={style.Contact}>
+      {/* Toast popup xabarlari ko'rinishi uchun bildirishnoma konteyneri */}
+      <ToastContainer position="top-right" autoClose={3000} />
+
       <div className={style.ContactContent}>
         <h1>
           {t("contactTitle")} <br /> <span> {t("contactTitle2")} </span>
@@ -54,7 +64,7 @@ const Contact = () => {
         <input
           type="email"
           id="email"
-          required
+          // required
           placeholder={t("contactEmailPlaceholder")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
