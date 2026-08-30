@@ -81,11 +81,40 @@
 }
 
 .socials ul li a svg:hover {
-  color: #179af1;
+  color: #00000090 !important;
 }
 
 .socials ul li .facebook_icon {
   transition: 0.014s ease;
+}
+
+.degree {
+  display: inline-block;
+  background-color: rgba(139, 92, 246, 0.2); /* binafsha shaffof fon */
+  color: #a78bfa; /* och binafsha rang */
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.major {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  margin-top: .6rem;
+}
+
+.university {
+  font-size: 0.95rem;
+  color: #9ca3af; /* xira kulrang, orqa fonga mos tushadi */
+}
+
+.eduBox {
+  border-left: 3px solid #8b5cf6; /* chap tomondagi binafsha chiziq */
+  padding-left: 12px; /* chiziqdan matngacha masofa */
+  margin-top: 10px;
 }
 
 .socials ul li .facebook_icon svg:hover {

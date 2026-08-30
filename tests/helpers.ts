@@ -1,8 +1,8 @@
-import { expect } from "@playwright/test";
+import { expect, Page } from "@playwright/test";
 
 export class LANG {
-  page: any;
-  constructor(page: any) {
+  page: Page;
+  constructor(page: Page) {
     this.page = page;
   }
 
@@ -17,8 +17,8 @@ export class LANG {
 }
 
 export class socialMedia {
-  page: any;
-  constructor(page: any) {
+  page: Page;
+  constructor(page: Page) {
     this.page = page;
   }
 

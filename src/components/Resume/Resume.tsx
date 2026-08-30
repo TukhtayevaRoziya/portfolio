@@ -24,7 +24,7 @@ const Resume = () => {
 
   const resume = [
     {
-      id:1,
+      id: 1,
       class: style.about_me,
       title: t("aboutMe"),
       txt: (
@@ -36,12 +36,16 @@ const Resume = () => {
       ),
     },
     {
-      id:2,
+      id: 2,
       class: style.extra,
-      title: t("esucation"),
-      txt: t("educationText")
-         
-      ,
+      title: t("education"),
+      txt: (
+        <div className={style.eduBox}>
+          <span className={style.degree}>{t("degree")}</span>
+          <h4 className={style.major}>{t("major")}</h4>
+          <p className={style.university}>{t("university")}</p>
+        </div>
+      ),
     },
   ];
 

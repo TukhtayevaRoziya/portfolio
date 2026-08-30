@@ -12,18 +12,20 @@
 .Contact h1 {
   font-size: 50px;
   margin-bottom: 1rem;
-  color: white;
+  color: #3b3b3b;
   line-height: 70px;
 }
 
 .Contact h1 span {
-  color: #5875f8;
+  color: #b5b5b5;
   font-weight: bolder;
 }
 
 .Contact img {
   max-width: 100%;
   height: auto;
+      filter: grayscale(1);
+
 }
 
 .ContactContent {
@@ -48,11 +50,17 @@
   border: none;
   border-bottom: 1px solid #ccc;
   resize: vertical;
-  color: #ccc;
+  color: #2f2f2f;
   font-size: 18px;
   margin-top: 0.3rem;
   height: 50px;
   z-index: 10;
+}
+
+.ContactForm input::placeholder,
+.ContactForm textarea::placeholder{
+  color: red;
+  opacity: 1; /* Firefox default opacity: 0.54 ni bekor qiladi */
 }
 
 .ContactForm div:nth-child(3) {
@@ -85,6 +93,12 @@
   cursor: pointer;
   font-weight: 550;
   color: black;
+}
+
+
+.ContactForm button:hover{
+  background-color: #3b3b3b;
+  color: white;
 }
 .ContactForm textarea::placeholder,
 .ContactForm input::placeholder {
