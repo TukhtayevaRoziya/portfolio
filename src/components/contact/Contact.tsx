@@ -24,9 +24,9 @@ const Contact = () => {
     try {
       await axios.post(
         "https://portfolio-api-two-rosy.vercel.app/api/contact",
-        dataToSend
+        dataToSend,
       );
-      
+
       // Alert o'rniga muvaffaqiyatli notification
       toast.success("Iltimos! Emailingizni tekshiring!");
 
@@ -35,7 +35,7 @@ const Contact = () => {
       setMessage("");
     } catch (error) {
       console.error(error);
-      
+
       // Xatolik yuz berganda chiqadigan notification
       toast.error("Xatolik yuz berdi. Qaytadan urinib ko'ring!");
     }
@@ -56,6 +56,7 @@ const Contact = () => {
         <input
           type="text"
           id="name"
+          data-testid="contact-name-input"
           required
           placeholder={t("contactNamePlaceholder")}
           value={name}
@@ -64,6 +65,7 @@ const Contact = () => {
         <input
           type="email"
           id="email"
+          data-testid="contact-email-input"
           // required
           placeholder={t("contactEmailPlaceholder")}
           value={email}
@@ -71,12 +73,15 @@ const Contact = () => {
         />
         <textarea
           id="message"
+          data-testid="contact-message-input"
           required
           placeholder={t("contactMessagePlaceholder")}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        <button type="submit">{t("contactBtn")}</button>
+        <button data-testid="contact-submit-btn" type="submit">
+          {t("contactBtn")}
+        </button>
       </form>
     </div>
   );
