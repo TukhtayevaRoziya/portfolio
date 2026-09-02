@@ -19,7 +19,9 @@ test.describe("Contact Page test", () => {
 
     const { isValid, validationMessage } = await contactPage.getEmailValidation();
     expect(isValid).toBeFalsy();
-    expect(validationMessage).toContain("@");
+    
+    // Har bir brauzer har xil xabar berganligi sababli (Chrome: '@', Firefox/WebKit: 'email address'):
+    expect(validationMessage).toMatch(/(@|email address)/i);
   });
 
   test("Verify no error on successful form submission", async () => {
